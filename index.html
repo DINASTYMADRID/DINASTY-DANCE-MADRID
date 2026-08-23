@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DINASTY DANCE MADRID · Campeonato de Danzas Urbanas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="#" class="nav-mark">
+      <img src="images/logo.png" alt="Dinasty Dance Madrid">
+    </a>
+    <div class="nav-links">
+      <a href="#sobre">Sobre</a>
+      <a href="#trayectoria">Ediciones</a>
+      <a href="#categorias">Categorías</a>
+      <a href="#participar">Participar</a>
+      <a href="#galeria">Galería</a>
+      <a href="#entradas">Entradas</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+    <a href="#entradas" class="nav-cta">Entradas</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow" id="hero-eyebrow"></span>
+        <h1 class="hero-title" id="hero-title"></h1>
+        <p class="hero-sub" id="hero-sub"></p>
+        <div class="hero-meta" id="hero-meta"></div>
+        <div class="cta-row">
+          <a href="#participar" class="btn btn-fire">Inscríbete al battle</a>
+          <a href="#entradas" class="btn btn-ghost">Comprar entradas</a>
+        </div>
+      </div>
+      <img class="hero-logo" src="images/logo.png" alt="Logotipo Dinasty Dance Madrid">
+    </div>
+    <div class="scroll-cue">Descubre el campeonato</div>
+  </section>
+
+  <section class="about" id="sobre">
+    <div class="wrap about-grid">
+      <div class="section-head" style="margin-bottom:0;">
+        <span class="eyebrow">Sobre el campeonato</span>
+        <h2>Cultura urbana,<br>competición real</h2>
+      </div>
+      <div class="about-text">
+        <p>Dinasty Dance Madrid nace para dar un escenario serio a la escena de danzas urbanas en España. No es una exhibición: es un <strong>campeonato con jueces, rondas eliminatorias y un título en juego</strong>, pensado por y para la comunidad.</p>
+        <p>Desde nuestra primera edición hemos crecido junto a los b-boys, b-girls, poppers y house dancers que hacen de cada battle un evento memorable.</p>
+        <div class="about-stat-list">
+          <div class="stat"><b>2</b><span>Ediciones celebradas</span></div>
+          <div class="stat"><b>4+</b><span>Estilos de danza</span></div>
+          <div class="stat"><b>3</b><span>Días de competición</span></div>
+          <div class="stat" id="about-edicion-actual"><b>#3</b><span>Próxima edición</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bracket" id="trayectoria">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Trayectoria</span>
+        <h2>De la primera ronda<br>a la gran final</h2>
+        <p>Cada edición ha subido el nivel.</p>
+      </div>
+      <div class="bracket-track" id="bracket-track"></div>
+    </div>
+  </section>
+
+  <section class="cats" id="categorias">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Categorías</span>
+        <h2>Estilos en<br>competición</h2>
+        <p>Cada estilo compite en su propio bracket, con jueces especializados en cada disciplina.</p>
+      </div>
+    </div>
+    <div class="wrap" style="padding:0;">
+      <div class="cats-grid" id="cats-grid"></div>
+    </div>
+  </section>
+
+  <section class="participar" id="participar">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Cómo participar</span>
+        <h2>De la inscripción<br>al battle</h2>
+      </div>
+      <div class="steps" id="steps-grid"></div>
+      <div class="participar-cta">
+        <p id="participar-nota"></p>
+        <a href="#" id="participar-btn" class="btn btn-fire">Inscríbete ahora</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery" id="galeria">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Galería</span>
+        <h2>Ediciones<br>anteriores</h2>
+        <p>Momentos de las battles ya celebradas.</p>
+      </div>
+      <div id="gallery-content"></div>
+    </div>
+  </section>
+
+  <section class="tickets" id="entradas">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Entradas</span>
+        <h2>Vive el campeonato<br>desde la grada</h2>
+      </div>
+      <div class="tickets-grid" id="tickets-grid"></div>
+    </div>
+  </section>
+
+  <section class="sede">
+    <div class="wrap sede-grid">
+      <div class="sede-map"><div class="sede-pin"></div></div>
+      <div class="sede-text">
+        <span class="eyebrow">Sede</span>
+        <h2 style="margin:14px 0 22px;">Madrid,<br>próxima edición</h2>
+        <p id="sede-texto"></p>
+        <div class="sede-list" id="sede-lista"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contacto">
+    <div class="wrap contact-grid">
+      <div>
+        <span class="eyebrow">Contacto</span>
+        <h2>Hablemos<br>de danza</h2>
+        <p>¿Dudas sobre inscripciones, entradas o colaboraciones? Escríbenos y te respondemos.</p>
+      </div>
+      <div class="social-list" id="social-list"></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot-row">
+    <div class="foot-mark">
+      <img src="images/logo.png" alt="Dinasty Dance Madrid">
+      <span>© <span id="foot-year"></span> Dinasty Dance Madrid — Campeonato de Danzas Urbanas</span>
+    </div>
+    <span class="legal">Madrid, España</span>
+  </div>
+</footer>
+
+<script>
+async function loadSite(){
+  let data;
+  try{
+    const res = await fetch('content/site.json', {cache:'no-store'});
+    data = await res.json();
+  }catch(e){
+    console.error('No se pudo cargar content/site.json', e);
+    return;
+  }
+
+  // HERO
+  document.getElementById('hero-eyebrow').textContent = data.hero.eyebrow;
+  document.getElementById('hero-title').innerHTML =
+    `${data.hero.titulo_linea1}<br>${data.hero.titulo_linea2}<br><span class="fire-text">${data.hero.titulo_fuego}</span>`;
+  document.getElementById('hero-sub').textContent = data.hero.subtitulo;
+  document.getElementById('hero-meta').innerHTML = `
+    <div><strong>${data.hero.anio}</strong>${data.hero.fecha}</div>
+    <div><strong>Madrid</strong>${data.hero.sede_corta}</div>
+  `;
+  document.getElementById('about-edicion-actual').innerHTML =
+    `<b>#${data.trayectoria.length}</b><span>Edición en ${data.hero.anio}</span>`;
+
+  // TRAYECTORIA
+  document.getElementById('bracket-track').innerHTML = data.trayectoria.map(item => `
+    <div class="b-node ${item.destacada ? 'is-next' : ''}">
+      <div class="b-dot"></div>
+      <span class="b-num">${item.numero}</span>
+      <div class="b-year">${item.anio}</div>
+      <p class="b-desc">${item.descripcion}</p>
+      <span class="b-tag">${item.etiqueta}</span>
+    </div>
+  `).join('');
+
+  // CATEGORIAS
+  document.getElementById('cats-grid').innerHTML = data.categorias.map((c, i) => `
+    <div class="cat-card">
+      <span class="cat-num">0${i+1}</span>
+      <h3>${c.nombre}</h3>
+      <p>${c.descripcion}</p>
+    </div>
+  `).join('');
+
+  // PARTICIPAR
+  document.getElementById('steps-grid').innerHTML = data.participar_pasos.map((s, i) => `
+    <div class="step">
+      <span class="step-num">0${i+1}</span>
+      <h3>${s.titulo}</h3>
+      <p>${s.descripcion}</p>
+    </div>
+  `).join('');
+  document.getElementById('participar-nota').textContent = data.participar_nota;
+  document.getElementById('participar-btn').href = data.inscripcion_url || '#';
+
+  // GALERIA
+  const galeriaEl = document.getElementById('gallery-content');
+  if(data.galeria && data.galeria.length > 0){
+    galeriaEl.innerHTML = `<div class="gallery-grid">${data.galeria.map(g => `
+      <img src="${g.src}" alt="${g.caption || 'Foto de edición anterior de Dinasty Dance Madrid'}" loading="lazy">
+    `).join('')}</div>`;
+  } else {
+    galeriaEl.innerHTML = `<div class="gallery-empty">Todavía no hay fotos subidas. Añádelas desde el panel de edición (/admin) en la sección Galería.</div>`;
+  }
+
+  // ENTRADAS
+  document.getElementById('tickets-grid').innerHTML = data.entradas.map(t => `
+    <div class="ticket ${t.destacada ? 'is-featured' : ''}">
+      <span class="ticket-name">${t.nombre}</span>
+      <span class="ticket-price">${t.precio}</span>
+      <ul>${t.caracteristicas.map(f => `<li>${f}</li>`).join('')}</ul>
+      <a href="${t.url || '#'}" class="btn ${t.destacada ? 'btn-fire' : 'btn-ghost'}">Comprar</a>
+    </div>
+  `).join('');
+
+  // SEDE
+  document.getElementById('sede-texto').textContent = data.sede.texto;
+  document.getElementById('sede-lista').innerHTML = `
+    <div><b>Ciudad</b><span>${data.sede.ciudad}</span></div>
+    <div><b>Recinto</b><span>${data.sede.recinto}</span></div>
+    <div><b>Fecha</b><span>${data.sede.fecha}</span></div>
+    <div><b>Acceso</b><span>${data.sede.acceso}</span></div>
+  `;
+
+  // CONTACTO
+  document.getElementById('social-list').innerHTML = `
+    <a href="mailto:${data.contacto.email}"><span>Email</span><span>${data.contacto.email}</span></a>
+    <a href="#"><span>Instagram</span><span>${data.contacto.instagram}</span></a>
+    <a href="#"><span>TikTok</span><span>${data.contacto.tiktok}</span></a>
+    <a href="#"><span>YouTube</span><span>${data.contacto.youtube}</span></a>
+  `;
+
+  document.getElementById('foot-year').textContent = data.hero.anio;
+}
+loadSite();
+</script>
+
+</body>
+</html>
