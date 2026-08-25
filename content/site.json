@@ -52,14 +52,14 @@
   "galeria": [],
   "inscripcion_url": "#",
   "hero": {
-    "eyebrow": "III Campeonato · Danzas Urbanas",
+    "eyebrow": "III CERTAMEN DE DANZAS \"Dinasty Dance Madrid\"",
     "titulo_linea1": "MADRID SE",
     "titulo_linea2": "CONVIERTE EN",
-    "titulo_fuego": "PISTA DE BATALLA",
-    "subtitulo": "Tres días de battles, showcases y comunidad urbana. Breaking, Hip-Hop, House y Popping compiten por el título en la edición que marca una nueva era para Dinasty Dance.",
+    "titulo_fuego": "PISTA DE BAILE",
+    "subtitulo": "Después del gran éxito obtenido en nuestras dos anteriores ediciones con el \"Campeonato de Danza Dinasty Dance\" continuamos nuestra andadura apostando y dando forma a este nuevo III Certamen de Danza. \nQueremos apoyar y dar visibilidad a artistas de TODOS los Estilos, Danza Clásica, Contemporáneo, Español, Flamenco, Danza Urbana, Comercial, Fusión... \nDinasty Dance Madrid está dirigido a TODOS los bailarines, coreógraf@s y academias que quieran disfrutar y participar de un evento que valorará el Esfuerzo, Trabajo y Dedicación.",
     "anio": "2027",
     "fecha": "MARZO 2027 - Fecha por confirmar",
-    "sede_corta": "Sede por confirmar"
+    "sede_corta": "Teatro Auditorio C. internacional J.H. Newman"
   },
   "trayectoria": [
     {
@@ -72,7 +72,7 @@
     {
       "numero": "EDICIÓN II",
       "anio": "2026",
-      "descripcion": "II Campeonato de Danzas Urbanas: más categorías, más crews, más público.",
+      "descripcion": "II Campeonato de Danza, más categorías. MAYOR Satisfacción, una apuesta rotunda por cuidar los detalles. Éxito Absoluto.",
       "etiqueta": "Completada",
       "destacada": false
     },
@@ -80,7 +80,7 @@
       "numero": "EDICIÓN III",
       "anio": "2027",
       "descripcion": "La próxima cita. La edición más grande del campeonato hasta la fecha.",
-      "etiqueta": "Próximamente",
+      "etiqueta": "MARZO 2027",
       "destacada": true
     }
   ],
