@@ -20,12 +20,12 @@
   "participar_nota": "Las plazas por categoría son limitadas y se asignan por orden de inscripción.",
   "participar_pasos": [
     {
-      "titulo": "Elige tu categoría",
+      "titulo": "Elige tu ESTILO",
       "descripcion": "Selecciona el estilo en el que vas a competir: Breaking, Hip-Hop, House o Popping."
     },
     {
       "titulo": "Rellena tu inscripción",
-      "descripcion": "Completa el formulario con tus datos y los de tu crew, si compites en equipo."
+      "descripcion": "Completa el formulario con tus datos y los de tu grupo, si compites en equipo."
     },
     {
       "titulo": "Confirma tu plaza",
@@ -37,22 +37,22 @@
     }
   ],
   "contacto": {
-    "email": "info@dinastydancemadrid.com",
+    "email": "dinastydance24@gmail.com",
     "instagram": "@dinastydancemadrid",
     "tiktok": "@dinastydancemadrid",
     "youtube": "Dinasty Dance Madrid"
   },
   "sede": {
     "ciudad": "Madrid, España",
-    "recinto": "Por confirmar",
-    "fecha": "Por confirmar — 2027",
-    "acceso": "Detalles de transporte próximamente",
-    "texto": "El recinto exacto se anunciará próximamente. La III edición se celebrará en Madrid, con espacio para pista de battle, grada y zona de crews."
+    "recinto": "Lugar: Teatro Auditorio C. internacional J.H. Newman ",
+    "fecha": " MARZO 2027 - Fecha por confirmar",
+    "acceso": "Avda. de Guadalajara, 28 – 28032 (Metro San Blas)",
+    "texto": "La III Edición se celebrará en Madrid, en un escenario perfecto para los bailarines, práctico, acogedor, cómodo para el público y con una \"Luz fantástica\" para haceros brillar.\n"
   },
   "galeria": [],
   "inscripcion_url": "#",
   "hero": {
-    "eyebrow": "III CERTAMEN DE DANZAS \"Dinasty Dance Madrid\"",
+    "eyebrow": "III CERTAMEN DE DANZA \"Dinasty Dance Madrid\"",
     "titulo_linea1": "MADRID SE",
     "titulo_linea2": "CONVIERTE EN",
     "titulo_fuego": "PISTA DE BAILE",
@@ -86,8 +86,8 @@
   ],
   "entradas": [
     {
-      "nombre": "Día suelto",
-      "precio": "A definir",
+      "nombre": "ENTRADA 1 TURNO",
+      "precio": "HORARIO Y PRECIO DE ENTRADA POR DETERMINAR",
       "destacada": false,
       "caracteristicas": [
         "Acceso a una jornada",
