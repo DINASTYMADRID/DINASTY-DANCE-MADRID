@@ -1,35 +1,35 @@
 {
   "categorias": [
     {
-      "nombre": "Danzas Urbanas (hip hop, Funky, house, locking, popping, wacking, comercial, Heel etc.)",
-      "descripcion": "Power moves, footwork y freezes. La disciplina fundacional del battle urbano."
+      "nombre": "Danza Urbana (hip hop, Funky, house, locking, popping, wacking, comercial, Heel etc.)",
+      "descripcion": " La disciplina fundacional del baile urbano.\nGroove, musicalidad y actitud sobre ritmos de la cultura hip-hop.\nVelocidad de pies y fluidez continua al ritmo del house más puro"
     },
     {
-      "nombre": "Hip-Hop",
-      "descripcion": "Groove, musicalidad y actitud sobre ritmos de la cultura hip-hop."
+      "nombre": "Danza Contemporánea",
+      "descripcion": "Control corporal, precisión y estilo "
     },
     {
-      "nombre": "House",
-      "descripcion": "Velocidad de pies y fluidez continua al ritmo del house más puro."
+      "nombre": "Danza Clásica",
+      "descripcion": "La Disciplina y esfuerzo en estado puro"
     },
     {
-      "nombre": "Popping",
-      "descripcion": "Control corporal, precisión y estilo funk en cada golpe de música."
+      "nombre": "Danza Española y Flamenco",
+      "descripcion": "La fuerza, la garra y pasión sobre el escenario"
     }
   ],
-  "participar_nota": "Las plazas por categoría son limitadas y se asignan por orden de inscripción.",
+  "participar_nota": "Las plazas por categoría son limitadas",
   "participar_pasos": [
     {
       "titulo": "Elige tu ESTILO",
-      "descripcion": "Selecciona el estilo en el que vas a competir: Breaking, Hip-Hop, House o Popping."
+      "descripcion": "Selecciona la fecha y el estilo en el que vas a competir: Urbano, Contemporáneo, Español o Flamenco"
     },
     {
       "titulo": "Rellena tu inscripción",
       "descripcion": "Completa el formulario con tus datos y los de tu grupo, si compites en equipo."
     },
     {
-      "titulo": "Confirma tu plaza",
-      "descripcion": "Recibirás la confirmación con el calendario de rondas y horarios de tu categoría."
+      "titulo": "Confirma tu plaza con el pago de la inscripción",
+      "descripcion": "Recibirás la confirmación y toda la información del calendario de y horarios de tu categoría."
     },
     {
       "titulo": "Compite en Madrid",
@@ -79,7 +79,7 @@
     {
       "numero": "EDICIÓN III",
       "anio": "2027",
-      "descripcion": "La próxima cita. La edición más grande del campeonato hasta la fecha.",
+      "descripcion": "La próxima cita. La edición que confirmará \"Dinasty Dance Madrid\" como el espacio del bailarín en estado puro. Donde, sobre todas las cosas, lo importante es la Danza  porque \"CADA PASO CUENTA\"",
       "etiqueta": "MARZO 2027",
       "destacada": true
     }
