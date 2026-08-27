@@ -13,7 +13,7 @@
 <header>
   <nav>
     <a href="#" class="nav-mark">
-      <img src="images/logo.png" alt="Dinasty Dance Madrid">
+      <img src="images/logo.png" alt="Dinasty Dance Madrid" id="nav-logo">
     </a>
     <div class="nav-links">
       <a href="#sobre">Sobre</a>
@@ -41,7 +41,7 @@
           <a href="#entradas" class="btn btn-ghost">Comprar entradas</a>
         </div>
       </div>
-      <img class="hero-logo" src="images/logo.png" alt="Logotipo Dinasty Dance Madrid">
+      <img class="hero-logo" src="images/logo.png" alt="Logotipo Dinasty Dance Madrid" id="hero-logo-img">
     </div>
     <div class="scroll-cue">Descubre el campeonato</div>
   </section>
@@ -49,16 +49,13 @@
   <section class="about" id="sobre">
     <div class="wrap about-grid">
       <div class="section-head" style="margin-bottom:0;">
-        <span class="eyebrow">Sobre el campeonato</span>
-        <h2>Cultura urbana,<br>competición real</h2>
+        <span class="eyebrow" id="sobre-eyebrow">Sobre el campeonato</span>
+        <h2 id="sobre-titulo">Cultura urbana,<br>competición real</h2>
       </div>
       <div class="about-text">
-        <p>Dinasty Dance Madrid nace para dar un escenario serio a la escena de danzas urbanas en España. No es una exhibición: es un <strong>campeonato con jueces, rondas eliminatorias y un título en juego</strong>, pensado por y para la comunidad.</p>
-        <p>Desde nuestra primera edición hemos crecido junto a los b-boys, b-girls, poppers y house dancers que hacen de cada battle un evento memorable.</p>
-        <div class="about-stat-list">
-          <div class="stat"><b>2</b><span>Ediciones celebradas</span></div>
-          <div class="stat"><b>4+</b><span>Estilos de danza</span></div>
-          <div class="stat"><b>3</b><span>Días de competición</span></div>
+        <p id="sobre-parrafo1"></p>
+        <p id="sobre-parrafo2"></p>
+        <div class="about-stat-list" id="sobre-stats">
           <div class="stat" id="about-edicion-actual"><b>#3</b><span>Próxima edición</span></div>
         </div>
       </div>
@@ -151,7 +148,7 @@
 <footer>
   <div class="wrap foot-row">
     <div class="foot-mark">
-      <img src="images/logo.png" alt="Dinasty Dance Madrid">
+      <img src="images/logo.png" alt="Dinasty Dance Madrid" id="foot-logo">
       <span>© <span id="foot-year"></span> Dinasty Dance Madrid — Campeonato de Danzas Urbanas</span>
     </div>
     <span class="legal">Madrid, España</span>
@@ -180,6 +177,26 @@ async function loadSite(){
   `;
   document.getElementById('about-edicion-actual').innerHTML =
     `<b>#${data.trayectoria.length}</b><span>Edición en ${data.hero.anio}</span>`;
+
+  // LOGO (menú, portada, pie)
+  const logoSrc = (data.hero.logo_src) || 'images/logo.png';
+  ['nav-logo', 'hero-logo-img', 'foot-logo'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.src = logoSrc;
+  });
+
+  // SOBRE EL CAMPEONATO
+  const negrita = (txt) => (txt || '').replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+  if (data.sobre) {
+    document.getElementById('sobre-eyebrow').textContent = data.sobre.eyebrow;
+    document.getElementById('sobre-titulo').innerHTML = `${data.sobre.titulo_linea1}<br>${data.sobre.titulo_linea2}`;
+    document.getElementById('sobre-parrafo1').innerHTML = negrita(data.sobre.parrafo1);
+    document.getElementById('sobre-parrafo2').innerHTML = negrita(data.sobre.parrafo2);
+    const statsHtml = (data.sobre.estadisticas || []).map(s => `
+      <div class="stat"><b>${s.numero}</b><span>${s.etiqueta}</span></div>
+    `).join('');
+    document.getElementById('sobre-stats').insertAdjacentHTML('afterbegin', statsHtml);
+  }
 
   // TRAYECTORIA
   document.getElementById('bracket-track').innerHTML = data.trayectoria.map(item => `
