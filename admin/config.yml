@@ -1,35 +1,6 @@
-# Use DecapBridge PKCE auth (required)
 backend:
   name: git-gateway
-  repo: DINASTYMADRID/DINASTY-DANCE-MADRID
   branch: main
-  auth_type: pkce
-  base_url: https://auth.decapbridge.com
-  auth_endpoint: /sites/34a537af-a4b7-4ad0-93fe-1e54e450655f/pkce
-  auth_token_endpoint: /sites/34a537af-a4b7-4ad0-93fe-1e54e450655f/token
-  gateway_url: https://gateway.decapbridge.com
-
-  # See who did what (optional)
-  commit_messages:
-    create: Create {{collection}} "{{slug}}" - {{author-name}} <{{author-login}}> via DecapBridge
-    update: Update {{collection}} "{{slug}}" - {{author-name}} <{{author-login}}> via DecapBridge
-    delete: Delete {{collection}} "{{slug}}" - {{author-name}} <{{author-login}}> via DecapBridge
-    uploadMedia: Upload "{{path}}" - {{author-name}} <{{author-login}}> via DecapBridge
-    deleteMedia: Delete "{{path}}" - {{author-name}} <{{author-login}}> via DecapBridge
-    openAuthoring: Message {{message}} - {{author-name}} <{{author-login}}> via DecapBridge
-
-# Enable PKCE fields (optional, recommended)
-auth:
-  email_claim: email
-  first_name_claim: first_name
-  last_name_claim: last_name
-  avatar_url_claim: avatar_url
-
-# Better Decap + Bridge logo (optional)
-logo_url: https://decapbridge.com/decapcms-with-bridge.svg
-
-# Add site links in Decap CMS (optional)
-site_url: https://fancy-chebakia-7a7842.netlify.app
 
 local_backend: true
 
@@ -56,6 +27,23 @@ collections:
               - { label: "Año del campeonato", name: "anio", widget: "string" }
               - { label: "Fecha (texto libre)", name: "fecha", widget: "string" }
               - { label: "Sede (texto corto)", name: "sede_corta", widget: "string" }
+              - { label: "Logo (usado en menú, portada y pie)", name: "logo_src", widget: "image" }
+
+          - label: "Sobre el campeonato"
+            name: "sobre"
+            widget: "object"
+            fields:
+              - { label: "Texto pequeño superior", name: "eyebrow", widget: "string" }
+              - { label: "Título línea 1", name: "titulo_linea1", widget: "string" }
+              - { label: "Título línea 2", name: "titulo_linea2", widget: "string" }
+              - { label: "Párrafo 1 (usa **palabra** para negrita)", name: "parrafo1", widget: "text" }
+              - { label: "Párrafo 2", name: "parrafo2", widget: "text" }
+              - label: "Estadísticas (3 tarjetas)"
+                name: "estadisticas"
+                widget: "list"
+                fields:
+                  - { label: "Número", name: "numero", widget: "string" }
+                  - { label: "Etiqueta", name: "etiqueta", widget: "string" }
 
           - label: "Trayectoria (ediciones)"
             name: "trayectoria"
@@ -120,3 +108,4 @@ collections:
             fields:
               - { label: "Imagen", name: "src", widget: "image" }
               - { label: "Descripción (opcional)", name: "caption", widget: "string", required: false }
+
