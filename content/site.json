@@ -59,7 +59,20 @@
     "subtitulo": "Después del gran éxito obtenido en nuestras dos anteriores ediciones con el \"Campeonato de Danza Dinasty Dance\" continuamos nuestra andadura apostando y dando forma a este nuevo III Certamen de Danza. \nQueremos apoyar y dar visibilidad a artistas de TODOS los Estilos, Danza Clásica, Contemporáneo, Español, Flamenco, Danza Urbana, Comercial, Fusión... \nDinasty Dance Madrid está dirigido a TODOS los bailarines, coreógraf@s y academias que quieran disfrutar y participar de un evento que valorará el Esfuerzo, Trabajo y Dedicación.",
     "anio": "2027",
     "fecha": "MARZO 2027 - Fecha por confirmar",
-    "sede_corta": "Teatro Auditorio C. internacional J.H. Newman"
+    "sede_corta": "Teatro Auditorio C. internacional J.H. Newman",
+    "logo_src": "images/uploads/Gemini_Generated_Image_igp0fiigp0fiigp0.jpg"
+  },
+  "sobre": {
+    "eyebrow": "Sobre el campeonato",
+    "titulo_linea1": "Cultura y pasión,",
+    "titulo_linea2": "competición real",
+    "parrafo1": "Dinasty Dance Madrid nace para dar un escenario serio a todos los estilos de danza en España. No es una exhibición: es un **certamen con jueces, categorías por estilo y un título en juego**, pensado por y para la comunidad de la danza.",
+    "parrafo2": "Desde nuestra primera edición hemos crecido junto a bailarines, coreógrafos y academias de danza urbana, contemporánea, clásica, española y flamenco que hacen de cada edición un evento memorable.",
+    "estadisticas": [
+      { "numero": "2", "etiqueta": "Ediciones celebradas" },
+      { "numero": "4+", "etiqueta": "Estilos de danza" },
+      { "numero": "3", "etiqueta": "Días de competición" }
+    ]
   },
   "trayectoria": [
     {
